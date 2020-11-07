@@ -17,12 +17,18 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #000000;
   color: #ffffff;
   height: 80px;
-  padding: 10px;
+  padding: 0px;
   line-height: 3;
-  font-size: 1.2rem;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: top;
+}
+
+a+a {
+  margin-left: 10px;
 }
 
 a,
@@ -39,13 +45,15 @@ nav a:hover{
 
 header {
   height: 150px;
-  padding-top: 80px;
+  padding-top: 50px;
   text-align: center;
   font-size: 1.5rem;
+  color: rgb(0, 0, 0);
 }
 
 header h1 {
   transform: skewX(-2deg);
+  font-size: 80px;
 }
 
 select {
@@ -101,13 +109,28 @@ input {
 
 .wrapper {
   background-color: #f2f8ff;
+  background-image: url("https://data.whicdn.com/images/323493678/original.jpg?t=1544275358");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 100px;
+}
+
+body {
+  background-color: #cecccc;
+}
+
+.ui-container-workout {
+  padding-top: 100px;
 }
 
 .card.m-auto,
 .m-auto {
   margin: 0 auto;
   width: 500px;
+  background-color: rgb(172, 169, 169);
+
 }
 
 form .workout-type,
@@ -140,7 +163,9 @@ form::after {
 .exercise .ui.card {
   width: 400px;
   max-width: 600px;
-}
+  padding-top: 10px;
+ }
+
 
 .exercise .buttons {
   margin-top: 20px;
@@ -426,7 +451,8 @@ form > button {
 .workout-type,
 .cardio-form,
 .resistance-form {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @keyframes toast {
