@@ -12,8 +12,8 @@ module.exports = function(app) {
   });
 
   app.post("/api/workouts", function(req, res) {
-    db.Workout.create({}).then(function(newWorkout ) {
-        res.json(newWorkout );
+    db.Workout.create({}).then(function(newWorkout) {
+        res.json(newWorkout);
     })
         .catch(function(err) {
         res.json(err);
